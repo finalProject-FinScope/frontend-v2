@@ -5,6 +5,7 @@ export default {
     colors: {
       whitegreen: "#f2f9f9",
       lightgreen: "#a7f3d0",
+      darkgreen: "#134e4a",
     },
     extend: {},
   },
