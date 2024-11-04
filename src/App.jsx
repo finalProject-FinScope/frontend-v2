@@ -16,25 +16,24 @@ const cards = [
   <Card1 key="1" />,
   <Card2 key="2" />,
   <Card3 key="3" />,
-  <Card4 key="4" />,
+  /*  <Card4 key="4" />,
   <Card5 key="5" />,
   <Card6 key="6" />,
   <Card7 key="7" />,
   <Card8 key="8" />,
   <Card9 key="9" />,
   <Card10 key="10" />,
-  <Card11 key="11" />,
+  <Card11 key="11" />, */
 ];
 
 const App = () => {
   return (
     <div className="flex min-h-screen bg-slate-300">
       <SideBar />
+
       <div className="flex-1 p-6">
-        <div className="grid grid-cols-1 gap-4">
-          {/* Hauptinhalt hier */}
-          {cards}
-        </div>
+        {/* Hauptinhalt hier */}
+        {cards}
       </div>
     </div>
   );
