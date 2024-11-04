@@ -11,16 +11,17 @@ const Sidebar = () => {
   return (
     <div
       className={`fixed top-0 left-0 h-full ${
-        isOpen ? "w-64" : "w-16"
-      } bg-darkgreen text-white transition-all duration-300`}
+        isOpen ? "w-40" : "w-16"
+      } bg-emerald-900 text-white transition-all duration-300`}
     >
       <button
-        className={`absolute top-4 ${
+        className={`absolute top-1/2 transform -translate-y-1/2 ${
           isOpen ? "right-[-12px]" : "right-[-12px]"
-        } text-white bg-gray-800 p-2 rounded-full`}
+        } text-white bg-emerald-400 p-2 rounded-full`}
         onClick={toggleSidebar}
       >
-        {isOpen ? <FaChevronLeft /> : <FaChevronRight />}
+        {" "}
+        {isOpen ? <FaChevronLeft /> : <FaChevronRight />}{" "}
       </button>
       {isOpen && (
         <ul className="mt-10">
