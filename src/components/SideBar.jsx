@@ -10,9 +10,9 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 h-full ${
+      className={`fixed top-[5%] h-[90%] ${
         isOpen ? "w-40" : "w-16"
-      } bg-emerald-900 text-white transition-all duration-300`}
+      } bg-whitegreen text-white transition-all duration-300`}
     >
       <button
         className={`absolute top-1/2 transform -translate-y-1/2 ${
@@ -24,20 +24,14 @@ const Sidebar = () => {
         {isOpen ? <FaChevronLeft /> : <FaChevronRight />}{" "}
       </button>
       {isOpen && (
-        <ul className="mt-10">
-          <li className="py-2 px-4 hover:bg-gray-700 text-whitegreen">Home</li>
-          <li className="py-2 px-4 hover:bg-gray-700 text-whitegreen">Data</li>
-          <li className="py-2 px-4 hover:bg-gray-700 text-whitegreen">
-            Review
-          </li>
-          <li className="py-2 px-4 hover:bg-gray-700 text-whitegreen">
-            Options
-          </li>
-          <li className="py-2 px-4 hover:bg-gray-700 text-whitegreen">Demo</li>
-          <li className="py-2 px-4 hover:bg-gray-700 text-whitegreen">Stats</li>
-          <li className="py-2 px-4 hover:bg-gray-700 text-whitegreen">
-            Settings
-          </li>
+        <ul className="flex flex-col justify-center items-center space-y-4 mt-[100%]">
+          <li className="py-2 px-4 hover:bg-gray-700 text-black">Home</li>
+          <li className="py-2 px-4 hover:bg-gray-700 text-black">Data</li>
+          <li className="py-2 px-4 hover:bg-gray-700 text-black">Review</li>
+          <li className="py-2 px-4 hover:bg-gray-700 text-black">Options</li>
+          <li className="py-2 px-4 hover:bg-gray-700 text-black">Demo</li>
+          <li className="py-2 px-4 hover:bg-gray-700 text-black">Stats</li>
+          <li className="py-2 px-4 hover:bg-gray-700 text-black">Settings</li>
         </ul>
       )}
     </div>

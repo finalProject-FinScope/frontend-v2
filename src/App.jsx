@@ -28,10 +28,14 @@ const cards = [
 
 const App = () => {
   return (
-    <div className="flex">
+    <div className="flex min-h-screen bg-slate-300">
       <SideBar />
-      <div className="flex-1 p-6">{/* Dein Hauptinhalt hier */}</div>
-      {cards}
+      <div className="flex-1 p-6">
+        <div className="grid grid-cols-1 gap-4">
+          {/* Hauptinhalt hier */}
+          {cards}
+        </div>
+      </div>
     </div>
   );
 };
