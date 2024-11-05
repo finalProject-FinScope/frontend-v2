@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+// Sidebar.jsx
+import React from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const Sidebar = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
+const Sidebar = ({ isOpen, setIsOpen }) => {
+  // Props hinzufügen
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
@@ -15,13 +15,10 @@ const Sidebar = () => {
       } bg-whitegreen text-white shadow-md rounded-lg transition-all duration-300`}
     >
       <button
-        className={`absolute top-1/2 transform -translate-y-1/2 ${
-          isOpen ? "right-[-12px]" : "right-[-12px]"
-        } text-white bg-emerald-400 p-2 rounded-full`}
+        className="absolute top-1/2 transform -translate-y-1/2 right-[-12px] text-white bg-emerald-400 p-2 rounded-full"
         onClick={toggleSidebar}
       >
-        {" "}
-        {isOpen ? <FaChevronLeft /> : <FaChevronRight />}{" "}
+        {isOpen ? <FaChevronLeft /> : <FaChevronRight />}
       </button>
       {isOpen && (
         <ul className="flex flex-col justify-center items-center space-y-4 mt-[100%]">
