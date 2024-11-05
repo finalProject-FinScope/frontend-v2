@@ -1,6 +1,7 @@
 import React from "react";
 import SideBar from "./components/SideBar";
 import Card from "./components/Card";
+// import ChartCard from "./components/ChartCard";
 
 const cards = [<Card key="1" />];
 
