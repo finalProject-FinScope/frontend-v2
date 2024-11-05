@@ -12,7 +12,7 @@ const Sidebar = () => {
     <div
       className={`fixed top-[5%] h-[90%] ${
         isOpen ? "w-40" : "w-16"
-      } bg-whitegreen text-white transition-all duration-300`}
+      } bg-whitegreen text-white shadow-md rounded-lg transition-all duration-300`}
     >
       <button
         className={`absolute top-1/2 transform -translate-y-1/2 ${
