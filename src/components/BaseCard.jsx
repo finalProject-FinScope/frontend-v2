@@ -1,5 +1,4 @@
 // components/BaseCard.jsx (neue Basis-Komponente)
-import React from "react";
 
 const BaseCard = ({ children, className = "" }) => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 import BaseCard from "./BaseCard";
 import { Bar } from "react-chartjs-2";
 import {
