@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import SideBar from "./components/SideBar";
 import BaseCard from "./components/BaseCard";
 import ChartCard from "./components/ChartCard";
+import ManualEntryCardWrapper from "./components/ManualEntryCardWrapper";
 import ManualEntryCard from "./components/ManualEntryCard";
 
 const App = () => {
@@ -19,7 +20,10 @@ const App = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           <ChartCard />
           <BaseCard>Transaktionen</BaseCard>
-          <ManualEntryCard BaseCard={BaseCard} />
+
+          <ManualEntryCardWrapper>
+            <ManualEntryCard BaseCard={BaseCard} />
+          </ManualEntryCardWrapper>
         </div>
       </main>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { PlusCircle, X } from "lucide-react";
+import ManualEntryCardWrapper from "./ManualEntryCardWrapper";
 
 const ManualEntryCard = ({ BaseCard }) => {
   const [isFormOpen, setIsFormOpen] = useState(false);
@@ -34,7 +35,7 @@ const ManualEntryCard = ({ BaseCard }) => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <ManualEntryCardWrapper>
       {!isFormOpen ? (
         <BaseCard>
           <div className="flex items-center justify-center p-6 cursor-pointer hover:bg-gray-50 transition-colors">
@@ -162,7 +163,7 @@ const ManualEntryCard = ({ BaseCard }) => {
           </div>
         </BaseCard>
       )}
-    </div>
+    </ManualEntryCardWrapper>
   );
 };
 
