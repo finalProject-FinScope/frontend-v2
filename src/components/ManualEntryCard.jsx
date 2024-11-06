@@ -14,7 +14,7 @@ const ManualEntryCard = ({ BaseCard }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Hier können Sie die Daten an Ihre Backend-API senden
+    // Hier werden Sie die Daten an Ihre Backend-API senden
     console.log(formData);
     setFormData({
       title: "",
